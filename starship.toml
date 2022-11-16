@@ -1,0 +1,18 @@
+[character]
+success_symbol = "[](bold white)"
+error_symbol = "[](bold red)"
+
+[username]
+format = "[$user]($style)   "
+style_user = "bold blue"
+show_always = true
+
+[hostname]
+format = "[$ssh_symbol$hostname]($style)   in "
+ssh_only = false
+style = "bold dimmed blue"
+
+
+[python]
+style = "green bold"
+
