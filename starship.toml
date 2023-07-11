@@ -16,3 +16,6 @@ style = "bold dimmed blue"
 [python]
 style = "green bold"
 
+[lua]
+symbol = " "
+
