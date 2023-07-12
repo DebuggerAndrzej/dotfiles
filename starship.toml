@@ -14,8 +14,24 @@ style = "bold dimmed blue"
 
 
 [python]
-style = "green bold"
+format = 'via [${symbol}${pyenv_prefix}(${version})]($style) [(\($virtualenv\))](bold yellow)'
+style = "bold blue"
+symbol = " "
+
 
 [lua]
-symbol = " "
+symbol = "󰢱 "
 
+[golang]
+symbol = " "
+
+[c]
+detect_extensions = ["c", "h", "cc", "cpp", "hh", "hpp"]
+symbol = " "
+
+[rust]
+symbol = "󱘗 "
+
+[cmake]
+symbol = " "
+style="green"
