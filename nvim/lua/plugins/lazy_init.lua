@@ -11,7 +11,3 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-require("amazurki.set")
-require("amazurki.lazy")
-require("amazurki.shortcuts")
-

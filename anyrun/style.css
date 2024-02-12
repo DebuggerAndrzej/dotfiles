@@ -1,0 +1,20 @@
+entry {
+	background-color: #9DA9A0;
+	font: 18px "Inter Nerd Font Propo";
+}
+
+list {
+	margin-top: 15px;
+	background-color: #3C4841;
+	border-radius: 6px;
+}
+
+#match:selected {
+	background-color: #9DA9A0;
+	border-radius: 6px;
+}
+
+window {
+	background-color: rgba(0, 0, 0, 0);
+}
+

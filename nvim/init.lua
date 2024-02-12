@@ -1,1 +1,2 @@
-require("amazurki")
+require("core")
+require("plugins")
