@@ -1,3 +1,8 @@
+format = """$all$fill$time$line_break$character"""
+
+[fill]
+symbol = " "
+
 [character]
 success_symbol = "[](bold white)"
 error_symbol = "[](bold red)"
@@ -33,3 +38,9 @@ symbol = "󱘗 "
 [cmake]
 symbol = " "
 style="green"
+
+[time]
+disabled = false
+style = "dimmed green"
+format = '[ $time]($style) '
+time_format = '%R'
