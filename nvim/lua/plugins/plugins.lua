@@ -1,6 +1,5 @@
 local plugins = {
-	"neanias/everforest-nvim",
-	"rebelot/kanagawa.nvim",
+	"shaunsingh/nord.nvim",
 	"nvim-treesitter/nvim-treesitter",
 	"windwp/nvim-autopairs",
 	"lewis6991/gitsigns.nvim",

@@ -1,16 +1,16 @@
 entry {
-	background-color: #9DA9A0;
+	background-color: #4C566A;
 	font: 18px "Inter Nerd Font Propo";
 }
 
 list {
 	margin-top: 15px;
-	background-color: #3C4841;
+	background-color: #2E3440;
 	border-radius: 6px;
 }
 
 #match:selected {
-	background-color: #9DA9A0;
+	background-color: #81A1C1;
 	border-radius: 6px;
 }
 

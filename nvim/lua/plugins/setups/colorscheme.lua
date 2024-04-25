@@ -1,4 +1,1 @@
-require("everforest").setup({
-	background="hard",
-})
-require("everforest").load()
+require('nord').set()

@@ -9,20 +9,25 @@ error_symbol = "[](bold red)"
 
 [username]
 format = "[$user]($style)   "
-style_user = "bold dimmed green"
+style_user = "bold fg:#BF616A"
 show_always = true
 
 [hostname]
 format = "[$ssh_symbol$hostname]($style)   in "
 ssh_only = false
-style = "bold green"
+style = "bold fg:#D08770"
 
 [git_branch]
-style = "bold fg:#A7C080"
+style = "bold fg:#A3BE8C"
 
 [git_status]
 disabled = true
 
+[directory]
+style = "bold fg:#EBCB8B"
+
+[cmd_duration]
+style = "fg:#8FBCBB"
 
 [python]
 format = 'via [${symbol}${pyenv_prefix}(${version})]($style) [(\($virtualenv\))](bold yellow)'
@@ -48,6 +53,6 @@ style="green"
 
 [time]
 disabled = false
-style = "dimmed green"
+style = "fg:#B48EAD"
 format = '[ $time]($style) '
 time_format = '%R'
