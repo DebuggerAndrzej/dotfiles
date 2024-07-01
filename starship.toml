@@ -4,18 +4,18 @@ format = """$all$fill$time$line_break$character"""
 symbol = " "
 
 [character]
-success_symbol = "[](bold white)"
-error_symbol = "[](bold red)"
+success_symbol = "[](bold fg:#a9b1d6)"
+error_symbol = "[](bold fg:#f7768e)"
 
 [username]
 format = "[$user]($style)   "
-style_user = "bold fg:#BF616A"
+style_user = "bold dimmed fg:#7aa2f7"
 show_always = true
 
 [hostname]
 format = "[$ssh_symbol$hostname]($style)   in "
 ssh_only = false
-style = "bold fg:#D08770"
+style = "bold fg:#449dab"
 
 [git_branch]
 style = "bold fg:#A3BE8C"
@@ -24,10 +24,10 @@ style = "bold fg:#A3BE8C"
 disabled = true
 
 [directory]
-style = "bold fg:#EBCB8B"
+style = "bold fg:#7da6ff"
 
 [cmd_duration]
-style = "fg:#8FBCBB"
+style = "fg:#ff9e64"
 
 [python]
 format = 'via [${symbol}${pyenv_prefix}(${version})]($style) [(\($virtualenv\))](bold yellow)'
@@ -53,6 +53,6 @@ style="green"
 
 [time]
 disabled = false
-style = "fg:#B48EAD"
+style = "fg:#ad8ee6"
 format = '[ $time]($style) '
 time_format = '%R'

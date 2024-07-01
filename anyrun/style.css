@@ -1,20 +1,25 @@
 entry {
-	background-color: #4C566A;
+	background-color: #1a1b26;
 	font: 18px "Inter Nerd Font Propo";
+	color: #D8DEE9;
+}
+
+#entry label {
+  color: green;
 }
 
 list {
-	margin-top: 15px;
-	background-color: #2E3440;
+	margin-top: 10px;
+	background-color: #1a1b26;
 	border-radius: 6px;
+	color :#D8DEE9;
 }
 
 #match:selected {
-	background-color: #81A1C1;
+	background-color: #7aa2f7;
 	border-radius: 6px;
 }
 
 window {
 	background-color: rgba(0, 0, 0, 0);
 }
-

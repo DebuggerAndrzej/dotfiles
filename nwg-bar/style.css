@@ -9,11 +9,8 @@ window {
 
 /* Inner bar container, surrounds buttons */
 #inner-box {
-    background-color: #4C566A;
-	border-radius: 10px;
-	border-style: none;
-	border-width: 1px;
-	border-color: rgba (156, 142, 122, 0.7);
+    background-color: #1a1b26;
+	border-radius: 20px;
 	padding: 5px;
 	margin: 5px;
 }
@@ -25,9 +22,9 @@ button, image {
 }
 
 button {
-	padding-left: 10px;
-	padding-right: 10px;
-	margin: 5px;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin: 10px;
 	color: white;
 }
 
