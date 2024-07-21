@@ -11,6 +11,9 @@ window {
 #inner-box {
     background-color: #1a1b26;
 	border-radius: 20px;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #737aa2;
 	padding: 5px;
 	margin: 5px;
 }
