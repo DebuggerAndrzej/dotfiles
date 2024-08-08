@@ -5,7 +5,8 @@ return {
         config = function ()
             local lspconfig = require("lspconfig")
 
-            lspconfig.gopls.setup {}
+            lspconfig.gopls.setup{}
+            lspconfig.ols.setup{}
 
             vim.api.nvim_create_autocmd("LspAttach", {
                 group = vim.api.nvim_create_augroup("UserLspConfig", {}),
