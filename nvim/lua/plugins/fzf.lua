@@ -23,6 +23,16 @@ return {
 			desc = "Buffers",
 		},
 		{
+			"<leader>fs",
+			"<cmd>FzfLua git_stash<cr>",
+			desc = "Git existing stashes",
+		},
+		{
+			"<leader>fm",
+			"<cmd>FzfLua git_status<cr>",
+			desc = "Git modified files",
+		},
+		{
 			"<leader>fr",
 			"<cmd>FzfLua resume<cr>",
 			desc = "Resume last search",
