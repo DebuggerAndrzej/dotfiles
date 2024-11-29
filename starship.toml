@@ -1,58 +1,74 @@
-format = """$all$fill$time$line_break$character"""
+format = """$shell$all$fill$character$time$line_break """
 
 [fill]
 symbol = " "
 
 [character]
-success_symbol = "[](bold fg:#a9b1d6)"
-error_symbol = "[](bold fg:#f7768e)"
+success_symbol = "[ ](bold fg:#9ece6a)"
+error_symbol = "[ ](bold fg:#f7768e)"
 
 [username]
 format = "[$user]($style)   "
 style_user = "bold dimmed fg:#7aa2f7"
-show_always = true
+disabled = true
 
 [hostname]
 format = "[$ssh_symbol$hostname]($style)   in "
-ssh_only = false
 style = "bold fg:#449dab"
+disabled = true
 
 [git_branch]
-style = "bold fg:#A3BE8C"
+format = "- [$branch $symbol]($style)"
+style = "bold fg:#ff9e64"
 
 [git_status]
 disabled = true
 
 [directory]
-style = "bold fg:#7da6ff"
+style = "bold fg:#e0af68"
 
 [cmd_duration]
-style = "fg:#ff9e64"
+style = "fg:#f7768e"
+
+[nodejs]
+format = "- [$symbol($version )]($style)"
 
 [python]
-format = 'via [${symbol}${pyenv_prefix}(${version})]($style) [(\($virtualenv\))](bold yellow)'
+format = '- [${symbol}${pyenv_prefix}(${version})]($style) [(\($virtualenv\))](bold yellow)'
 style = "bold blue"
 symbol = " "
 
 [lua]
+format = "- [$symbol($version )]($style)"
 symbol = "󰢱 "
 
 [golang]
+format = "- [$symbol($version )]($style)"
 symbol = " "
 
 [c]
+format = "- [$symbol($version )]($style)"
 detect_extensions = ["c", "h", "cc", "cpp", "hh", "hpp"]
 symbol = " "
 
 [rust]
+format = "- [$symbol($version )]($style)"
 symbol = "󱘗 "
 
 [cmake]
+format = "- [$symbol($version )]($style)"
 symbol = " "
 style="green"
 
 [time]
+format = '[ $time]($style) '
 disabled = false
 style = "fg:#ad8ee6"
-format = '[ $time]($style) '
 time_format = '%R'
+
+[shell]
+format = "[$indicator]($style)- "
+bash_indicator = "  "
+nu_indicator = " 󰛸 "
+style = "bold fg:#9ece6a"
+disabled = false
