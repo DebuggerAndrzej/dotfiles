@@ -1,13 +1,17 @@
 return {
 	{
 		"neovim/nvim-lspconfig",
-		opts = {},
+		opts = {
+			inlay_hints = { enabled = true },
+		},
 		config = function()
-			local lspconfig = require("lspconfig")
-
-			lspconfig.gopls.setup({})
-			lspconfig.ols.setup({})
-			lspconfig.roc_ls.setup({})
+			vim.lsp.enable("gopls")
+			vim.lsp.enable("just")
+			vim.lsp.enable("ols")
+			vim.lsp.enable("lua_ls")
+			vim.lsp.enable("pylyzer")
+			vim.lsp.enable("ruff_lsp")
+			vim.lsp.enable("nushell")
 
 			vim.api.nvim_create_autocmd("LspAttach", {
 				group = vim.api.nvim_create_augroup("UserLspConfig", {}),

@@ -3,6 +3,7 @@ input {
         xkb {
             layout "pl"
         }
+	numlock
     }
 }
 
@@ -20,23 +21,16 @@ cursor {
     xcursor-size 24
 }
 
+output "DP-1" {
+    mode "2560x1440@143.856"
+    position x=0 y=0
+}
+
 output "HDMI-A-1" {
     mode "2560x1440@144.006"
-    position x=0 y=0
-}
-output "DP-3" {
     position x=2560 y=0
 }
 
-output "DP-6" {
-    mode "2560x1440@143.856"
-    position x=0 y=0
-}
-
-output "DP-7" {
-    mode "2560x1440@143.856"
-    position x=2560 y=0
-}
 
 layout {
     gaps 10
@@ -73,7 +67,7 @@ window-rule {
 binds {
     Mod+Shift+Slash { show-hotkey-overlay; }
 
-    Mod+Q { spawn "alacritty"; }
+    Mod+Q { spawn "ghostty"; }
     Mod+D { spawn "fuzzel" "--icon-theme" "Tokyonight-Moon"; }
     Mod+L { spawn "hyprlock"; }
     Mod+Shift+L { spawn "nwg-bar"; }
@@ -85,6 +79,9 @@ binds {
     XF86AudioMicMute     allow-when-locked=true { spawn "wpctl" "set-mute" "@DEFAULT_AUDIO_SOURCE@" "toggle"; }
 
     Mod+Shift+C { close-window; }
+    Mod+W { toggle-column-tabbed-display; }
+    Mod+V { toggle-window-floating; }
+    Mod+Shift+V { switch-focus-between-floating-and-tiling; }
 
     Mod+Left  { focus-column-left; }
     Mod+Down  { focus-window-down; }

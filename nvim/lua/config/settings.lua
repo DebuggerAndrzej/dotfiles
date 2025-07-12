@@ -1,4 +1,5 @@
 vim.g.mapleader = " "
+vim.g.maplocalleader = ","
 vim.opt.relativenumber = true
 vim.opt.wrap = false
 vim.opt.colorcolumn = "120"
