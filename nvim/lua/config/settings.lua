@@ -3,6 +3,7 @@ vim.g.maplocalleader = ","
 vim.opt.relativenumber = true
 vim.opt.wrap = false
 vim.opt.colorcolumn = "120"
+vim.opt.winborder="rounded"
 
 vim.opt.tabstop = 4
 vim.opt.softtabstop = 4

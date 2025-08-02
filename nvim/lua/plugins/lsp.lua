@@ -9,7 +9,7 @@ return {
 			vim.lsp.enable("just")
 			vim.lsp.enable("ols")
 			vim.lsp.enable("lua_ls")
-			vim.lsp.enable("pylyzer")
+			vim.lsp.enable("pyright")
 			vim.lsp.enable("ruff_lsp")
 			vim.lsp.enable("nushell")
 
